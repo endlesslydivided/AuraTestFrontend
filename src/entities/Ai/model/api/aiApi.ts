@@ -16,7 +16,6 @@ export const aiApi = rtkApi.injectEndpoints({
                     headers: {
                         'x-api-key': import.meta.env.VITE_AI_API_KEY,
                         'anthropic-version': '2023-06-01',
-                        Authorization: 'OK',
                     },
                 };
             },

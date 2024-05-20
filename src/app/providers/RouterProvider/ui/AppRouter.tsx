@@ -41,8 +41,6 @@ export const AppRouter = memo(() => {
                 );
                 break;
         }
-        ('absolute');
-
         return (
             <Route
                 key={route.path}
