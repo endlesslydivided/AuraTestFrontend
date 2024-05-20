@@ -98,7 +98,7 @@ function UploadDataForm(props: UploadDataFormProps) {
         );
     };
 
-    const onSubmit = (_: UploadDataFormValues) => {
+    const onSubmit = () => {
         onSuccessfulUpload();
     };
 
@@ -147,7 +147,7 @@ function UploadDataForm(props: UploadDataFormProps) {
                                                   ) ?? null
                                                 : null
                                         }
-                                        onChange={(_: any, newValue) => {
+                                        onChange={(_: unknown, newValue) => {
                                             onChange(
                                                 newValue ? newValue : null,
                                             );
@@ -242,7 +242,7 @@ function UploadDataForm(props: UploadDataFormProps) {
                                             {...register(
                                                 `expert.${checkbox.value}` as const,
                                                 {
-                                                    validate: (_) => {
+                                                    validate: () => {
                                                         if (
                                                             !Object.values(
                                                                 expertValues,

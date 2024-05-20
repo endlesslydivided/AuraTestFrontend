@@ -5,6 +5,5 @@ export const rtkApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: '/',
     }),
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    endpoints: (builder) => ({}),
+    endpoints: () => ({}),
 });
